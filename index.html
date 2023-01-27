@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adivinhe a Palavra</title><!--título da página-->
+
+<!--links bootstrap-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="game.css"> <!--liga o html ao game.css-->
+
+<script src="game_login.js"></script> <!--liga o html ao game_login.js-->
+</head>
+<body>
+
+<center> <!--coloca tudo que está dentro no centro-->
+	<h1>Jogo</h1> <!--texto h1-->
+
+	<div class="col-lg-4 col-sm-8 col-xs-11 login_div1"> <!--class para funcionar em várias telas-->
+		<h3 >Jogador 1, faça o Login para jogar.</h3> <!--texto h3-->
+		<label >Nome de Usuário:</label> <!--legenda-->
+		 <input type="text" id="player1NameInput" class="form-control" placeholder="Nome do Jogador 1"> 
+		 <!-- input: abre uma caixa
+			  type = "texto" : informa que a caixa é de texto 
+			  id="player1NameInput" : nome da caixa
+			  class="form-control" : informa que é para formulário
+			  placeholder="Nome do Jogador 1 : dica que vai ficar escrita para a pessoa que vai preencher
+			-->
+		 <br> <!--dá um espaço-->
+	</div>
+<br>
+	<div class="col-lg-4 col-sm-8 col-xs-11 login_div2"> <!--class para funcionar em várias telas-->
+		<h3 >Jogador 2, faça o Login para jogar.</h3> <!--texto h3-->
+		  <label >Nome de Usuário:</label> <!--legenda-->
+		 <input type="text" id="player2NameInput" class="form-control" placeholder="Nome do Jogador 2">
+		 <!-- input : abre uma caixa
+			  type = "texto" : informa que a caixa é de texto 
+			  id="player1NameInput" : nome da caixa
+			  class="form-control" : informa que é para formulário
+			  placeholder="Nome do Jogador 1 : dica que vai ficar escrita para a pessoa que vai preencher
+			-->
+		<br> <!--dá um espaço-->
+	</div>
+	<br>
+		<button style="width:30%" class="btn btn-primary" onclick="addUser()">Log in</button>
+		<!-- button : cria um botão
+		     style="width:30%" : largura do botão em porcentagem
+			 class="btn btn-primary" 
+			 		btn: adicionará preenchimento e removerá a borda e a cor padrão do botão
+					btn-primary: deixa o botão azul
+			onclick="addUser()" : chama a addUser lá no js
+			-->
+</center>
+
+</body>
+</html>
